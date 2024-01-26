@@ -5,15 +5,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
- * @author Varun Upadhyay (https://github.com/varunu28)
+ * @author Varun Upadhyay (<a href="https://github.com/varunu28">...</a>)
  */
 // Driver Program
 public class DecimalToAnyBase {
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(
-            new InputStreamReader(System.in)
-        );
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the decimal input below: ");
         int decInput = Integer.parseInt(br.readLine());
         System.out.println();
@@ -22,15 +20,9 @@ public class DecimalToAnyBase {
         int base = Integer.parseInt(br.readLine());
         System.out.println();
 
-        System.out.println("Decimal Input" + " is: " + decInput);
-        System.out.println(
-            "Value of " +
-            decInput +
-            " in base " +
-            base +
-            " is: " +
-            convertToAnyBase(decInput, base)
-        );
+        System.out.println("Decimal Input"
+            + " is: " + decInput);
+        System.out.println("Value of " + decInput + " in base " + base + " is: " + convertToAnyBase(decInput, base));
 
         br.close();
     }
